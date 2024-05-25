@@ -1,0 +1,29 @@
+.about{
+    width: 80%;
+    margin:auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    /* background-color: aquamarine; */
+}
+
+.about .heading{
+    margin-top: 100px;
+    border: 2px solid black;
+}
+.about .heading h1{
+    font-size: 3rem;
+    margin: 10px 0;
+}
+.about .about-content{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 2px solid green;
+}
+.about .about-content img{
+    width: 300px;
+    margin: auto;
+}
