@@ -24,7 +24,7 @@ const Navbar = () => {
         <ul className={`nav-menu ${showMenu ? 'active' : ''}`}>
           <li><Link to="/" className={activeLink === '/' ? 'active' : ''} onClick={() => handleLinkClick('/')}>Home</Link></li>
           <li><Link to="/about" className={activeLink === '/about' ? 'active' : ''} onClick={() => handleLinkClick('/about')}>About</Link></li>
-          <li><Link to="/project" className={activeLink === '/project' ? 'active' : ''} onClick={() => handleLinkClick('/project')}>Project</Link></li>
+          <li><Link to="/project" className={activeLink === '/project' ? 'active' : ''} onClick={() => handleLinkClick('/project')}>Work</Link></li>
           <li><Link to="/edu" className={activeLink === '/edu' ? 'active' : ''} onClick={() => handleLinkClick('/edu')}>Resume</Link></li>
           <li><Link to="/contact" className={activeLink === '/contact' ? 'active' : ''} onClick={() => handleLinkClick('/contact')}>Contact us</Link></li>
         </ul>

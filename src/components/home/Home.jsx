@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../components/navbar/Navbar'
+import Navbar from '../navbar/Navbar'
 import './Home.css'
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";

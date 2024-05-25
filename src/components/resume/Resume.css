@@ -1,0 +1,209 @@
+.resume{
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3rem 2rem 4rem;
+    border-radius: 20px;
+    background-color: white;
+}
+.resume h1{
+font-size:2rem;
+    
+}
+.resume h2{
+font-size: 1.5rem;
+    
+}
+.resume .resume-info{
+    width: 95%;
+    margin: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+
+    flex-direction: row;
+
+}
+
+.resume .resume-left{
+    width: 50%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.resume .content{
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.resume .content div{
+    width: 90%;
+    /* margin: auto; */
+    /* border: 2px solid red; */
+    display: flex;
+    background-color:#FFE3BF;
+    padding: 20px 15px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.resume .content div p{
+    padding: 0;
+    margin: 4px 0;
+    gap: 0;
+    font-size: 15px;
+    /* border: 2px solid green; */
+}
+.resume .resume-right{
+    width: 50%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resume .skills{
+    width:92%;
+    margin: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+    gap: 30px;
+    background-color: #F8FBFB;
+    padding: 40px 20px;
+    
+    border-radius: 20px;
+    flex-direction: row;
+}
+.resume .skills .left{
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+    padding: 0;
+    
+    flex-direction: row;
+}
+.resume .skills .name{
+    font-size: 1.5rem;
+}
+.resume .skills .work-skills{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+.resume .skills .work-skill-name{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* border: 1px solid gray; */
+    /* border: 2px solid green; */
+}
+.resume .skills .work-skill-name p{
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    /* border: 1px solid gray; */
+    padding: 8px 18px;
+    font-size: 14px;
+    background-color: #E1E8EF;
+    border-radius: 10px;
+    /* border: 2px solid green; */
+}
+
+.resume .skills .soft-skills{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+
+@media only screen and (max-width:767px){
+    .resume{
+        width: 80%;
+        gap: 30px;
+        padding: 50px 20px;
+        border-radius: 20px;
+    }
+    .resume .resume-info{
+        width: 100%;     
+      flex-direction: column;
+        gap: 30px;
+    }
+    
+    .resume .resume-left{
+        width: 100%; 
+    }
+
+    .resume .resume-right{
+        width: 100%;
+    }
+    .resume .skills{
+        width: 100%;
+        margin: auto;
+        /* border: 2px solid blue; */
+        display: flex;
+        padding: 20px;
+        background-color: #F8FBFB;
+        padding: 20px 10px;
+        gap: 30px;
+        border-radius: 20px 0;
+        flex-direction: column;
+    }
+    .resume .skills .left{
+        width: 100%;
+        margin: auto;
+        /* border: 2px solid blue; */
+        display: flex;
+        padding: 0;
+        
+        flex-direction: row;
+    }
+    .skills .name{
+        font-size: 1.5rem;
+    }
+    .resume .skills .work-skills{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        
+    }
+    .resume .skills .work-skill-name{
+        display: flex;
+        flex-direction:row;
+        gap: 10px;
+        flex-wrap: wrap;
+        /* border: 1px solid gray; */
+        /* border: 2px solid green; */
+    }
+    .resume .skills .work-skill-name p{
+        display: flex;
+        flex-direction:row;
+        gap: 20px;
+        border: 1px solid gray;
+        padding: 5px 15px;
+        background-color: #F8FBFB;
+        border-radius: 10px;
+        /* border: 2px solid green; */
+    }
+    
+    .resume .skills .soft-skills{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        
+    }
+}

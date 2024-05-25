@@ -1,23 +1,41 @@
-import React from 'react'
-import './About.css'
-const About = () => {
-  return (
-    <div className='about'>
-     <div className='heading'>
-      <h1>About</h1>
-      <h2>Me</h2>
+import React, { useEffect, useState } from "react";
+import "./About.css";
 
-     </div>
-     <div className='about-content'>
-      <div>
-      <img src="nikku_image.jpg" alt="" />
+function About() {
+ 
+  return (
+    <div>
+      <div className="abt" >
+        <div className="about" data-aos="fade-up">
+          <div>
+            <h1>About me!</h1>
+          </div>
+          <div className="about-box">
+            <div className="about-content">
+              
+              <div className="about-info">
+                I am a crazy Technology Enthusiast, passionate about AI and Machine Learning, and possess the zeal to explore Full stack
+                development. I am currently pursuing my Bachelor of Technology
+                in Computer Science and Engineering from Netaji Subhash
+                Engineering College Kolkata. I am also working on many projects
+                in web development(using Javascript/ReactJS/NodeJS and some
+                other libraries and frameworks) and Machine Learning using
+                Python (A good grasp of Analysis) and looking forward to learn
+                and work on many more cool technologies. I love to portray the
+                world in a frame with my tech skills and sometimes escape to the
+                world of books. Can’t restrain me from capturing the eyeful even
+                though lacks photography skills
+              </div>
+            </div>
+
+            <div className="about-right">
+              <img src={"nikku_image.jpg"} alt="" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi nesciunt culpa nostrum molestiae quo eum totam soluta facere dicta, itaque vitae reprehenderit autem nihil corporis nulla id vel sequi!</p>
-      </div>
-     </div>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

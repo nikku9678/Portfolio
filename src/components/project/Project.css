@@ -1,10 +1,12 @@
 .project{
     width: 80vw;
     /* height: 100vh; */
-    margin: 10px auto;
+    margin: 20px auto;
     /* border: 2px solid red; */
     display: flex;
+    position: relative;
     gap: 30px;
+    padding: 2rem 2rem 4rem;
     justify-content: center;
     flex-direction: column;
     padding-bottom: 100px;
@@ -16,19 +18,20 @@
 }
 
 .project .top{
-   margin: 20px 0;
+   margin: 10px 0;
+   font-size: 1.1rem;
 }
 
 .project .categories{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    bordepxr: 2px solid black;
+    gap: 10px;
+    /* border: 2px solid black; */
 }
 .project .categories button{
    font-size: 14px;
-   padding: 10px 20px;
+   padding: 10px 25px;
    border-radius: 10px;
    border: 1px solid gray;
    cursor: pointer;
@@ -42,7 +45,7 @@
     border-radius: 10px;
 }
 .card{
-    width: 230px;
+    width: 320px;
     border-radius: 10px;
     padding: 10px;
     background-color: #FEFCFC;
@@ -85,4 +88,22 @@
     padding: 5px 30px;
     border: 1px solid gold;
     border-radius: 20px;
+}
+
+@media only screen and (max-width:767px){
+    .project{
+        width: 80vw;
+        padding: 2rem 2rem;
+    }
+    .project .project-card{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 30px 20px;
+    }
+    .card{
+        width: 90%;
+        margin: auto;
+    }
 }
