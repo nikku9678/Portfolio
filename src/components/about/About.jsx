@@ -5,14 +5,15 @@ function About() {
  
   return (
     <div>
-      <div className="abt" >
+  
         <div className="about" data-aos="fade-up">
-          <div>
+          
+          <div className="about-box">
+          
+            <div className="about-content">
+            <div>
             <h1>About me!</h1>
           </div>
-          <div className="about-box">
-            <div className="about-content">
-              
               <div className="about-info">
                 I am a crazy Technology Enthusiast, passionate about AI and Machine Learning, and possess the zeal to explore Full stack
                 development. I am currently pursuing my Bachelor of Technology
@@ -29,11 +30,11 @@ function About() {
             </div>
 
             <div className="about-right">
-              <img src={"nikku_image.jpg"} alt="" />
+              <img src={"nikku.jpg"} alt="" />
             </div>
           </div>
         </div>
-      </div>
+    
     </div>
   );
 }
