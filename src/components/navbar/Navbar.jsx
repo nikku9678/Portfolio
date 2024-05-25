@@ -1,39 +1,41 @@
-import React, { useState } from 'react'
-import './Navbar.css'
+import React, { useState } from 'react';
+import './Navbar.css';
 import { Link } from 'react-router-dom';
+
 const Navbar = () => {
-  const [showMenu,setShowMenu] =useState(false)
+  const [showMenu, setShowMenu] = useState(false);
+  const [activeLink, setActiveLink] = useState('/');
+
   const handleShowMenu = () => {
-    console.log("click");
-    const navMenu = document.querySelector(".nav-menu");
-    if (navMenu) {
-      navMenu.classList.toggle("active");
-    }
-    console.log(navMenu)
+    setShowMenu(!showMenu);
   };
+
+  const handleLinkClick = (path) => {
+    setActiveLink(path);
+    setShowMenu(false);
+  };
+
   return (
-    <div>
+    <div className="navbar">
       <div className='logo'>
         Nikku Kumar Das
       </div>
       <nav>
-        <ul className='nav-menu'>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/project">Project</Link></li>
-            <li><Link to="/edu">Resume</Link></li>
-            <li><Link to="/contact">Contact us</Link></li>
+        <ul className={`nav-menu ${showMenu ? 'active' : ''}`}>
+          <li><Link to="/" className={activeLink === '/' ? 'active' : ''} onClick={() => handleLinkClick('/')}>Home</Link></li>
+          <li><Link to="/about" className={activeLink === '/about' ? 'active' : ''} onClick={() => handleLinkClick('/about')}>About</Link></li>
+          <li><Link to="/project" className={activeLink === '/project' ? 'active' : ''} onClick={() => handleLinkClick('/project')}>Project</Link></li>
+          <li><Link to="/edu" className={activeLink === '/edu' ? 'active' : ''} onClick={() => handleLinkClick('/edu')}>Resume</Link></li>
+          <li><Link to="/contact" className={activeLink === '/contact' ? 'active' : ''} onClick={() => handleLinkClick('/contact')}>Contact us</Link></li>
         </ul>
-
-      
       </nav>
-
       <div className="menu-bar" onClick={handleShowMenu}>
-        <i className="fa-solid fa-bars" color='green'></i>
-        
-        </div>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
