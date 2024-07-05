@@ -8,7 +8,7 @@ const Homepage = () => {
     <div>
       <Home/>
       <About/>
-      <Resume/>
+      {/* <Resume/> */}
       <Project/>
     </div>
   )

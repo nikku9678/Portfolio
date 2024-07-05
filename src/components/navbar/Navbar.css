@@ -1,13 +1,17 @@
 .navbar {
   width: 100%;
   height: 60px;
-  position: relative;
+  position: fixed;
   top: 0;
   display: flex;
   padding: 10px 0;
   justify-content: space-around;
   align-items: center;
+  z-index: 1;
   background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* border-bottom: 2px solid black; */
+
 }
 
 nav {
@@ -15,7 +19,7 @@ nav {
 }
 
 .logo {
-  font-family: monospace;
+  font-family: "Playwrite MX", cursive;
   font-size: 25px;
   z-index: 10; /* Ensures logo is above other elements */
 }
@@ -43,7 +47,7 @@ nav ul li a {
 
 nav ul li a.active {
   color: white;
-  background-color: seagreen;
+  background-color: black;
 }
 
 .menu-bar {
@@ -55,7 +59,7 @@ nav ul li a.active {
 
 @media only screen and (max-width: 767px) {
   .navbar {
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .nav-menu {
@@ -90,24 +94,24 @@ nav ul li a.active {
   .menu-bar .bar2,
   .menu-bar .bar3 {
     border-top: 2px solid black;
-    margin-top: 5px;
+    margin-top: 3px;
   }
 
   .menu-bar .bar1 {
     width: 25px;
-    height: 1px;
+    height: 2px;
     border-radius: 10px;
   }
 
   .menu-bar .bar2 {
-    width: 20px;
-    height: 1px;
-    margin-left: 5px;
+    width: 18px;
+    height: 2px;
+    margin-left: 0;
   }
 
   .menu-bar .bar3 {
     width: 25px;
-    height: 1px;
+    height: 2px;
   }
 
   nav ul li a {

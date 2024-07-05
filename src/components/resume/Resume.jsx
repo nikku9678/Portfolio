@@ -1,9 +1,10 @@
 import React from 'react'
 import './Resume.css'
 const Resume = () => {
-    const skill =['java','C++','C','Python','HTML5','CSS3','JavaSript','CSS3','CSS3','CSS3','CSS3','CSS3','CSS3','CSS3','CSS3','CSS3']
+    const skill =['java','C++','C','Python','HTML5','CSS3','JavaSript','Bootstrap','React.js','Material UI','Node.js','Express.js','MongoDB']
+    const soft_skill =['Teamwork']
   return (
-    <div className='resume'>
+    <div className='resume' id='resume'>
       
        <div className='resume-heading'>
        <h1>Resume</h1>
@@ -21,9 +22,14 @@ const Resume = () => {
                     <p>B.Tech in Computer Science and Engineering</p>
                 </div>
                 <div>
-                    <p>2021-2025</p>
-                    <p>Netaji Subhash Enginnering College Kolakta</p>
+                    <p>2018-2020</p>
+                    <p>A.N College Patna</p>
                     <p>B.Tech in Computer Science and Engineering</p>
+                </div>
+                <div>
+                    <p>2016-2018</p>
+                    <p>S S Sansthan Ganguli Manigachi Darbhanga</p>
+                 
                 </div>
             </div>
         </div>
@@ -68,13 +74,20 @@ const Resume = () => {
             </div>
             <div className="work-skill-name">
                 {
-                    skill.map((skill)=>{
+                    soft_skill.map((skill)=>{
                         return(
                             <p>{skill}</p>
                         )
                     })
                 }
             </div>
+        </div>
+      </div>
+
+      <div className="whatIdo">
+        <div>
+            <h2>What I Do</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit explicabo a nostrum mollitia maxime nesciunt id! Reprehenderit nam pariatur id.</p>
         </div>
       </div>
     </div>

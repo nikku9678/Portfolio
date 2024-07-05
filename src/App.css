@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,5 +10,9 @@
   
 }
 body{
-  background-color: #F2F5F9;
+  /* background-color: #F2F5F9; */
+  /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply; */
+ /* color: white; */
+ background-color: #F6F6F6;
 }

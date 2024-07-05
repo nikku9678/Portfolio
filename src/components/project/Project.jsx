@@ -15,9 +15,12 @@ const Project = () => {
     : data.filter(project => project.category === selectedCategory);
 
   return (
-    <div className='project'>
+    <div className='project' id='project'>
+      {/* <div className='hr'></div> */}
       <div className='top'>
-        <h1>Projects</h1>
+        <span className='hr-one'></span>
+        <span><h1>Projects</h1></span>
+        <span className='hr-two'></span>
         
       </div>
       <div className="categories">
@@ -27,9 +30,10 @@ const Project = () => {
         </div>
       <div className="project-card">
         {filteredData.map((project, index) => (
-          <div key={index}>
+          <div key={index} className='pp'>
             <ProjectCard
               Img={project.Img}
+              id={project.id}
               tools={project.tools}
               title={project.title}
               demo={project.demo}
