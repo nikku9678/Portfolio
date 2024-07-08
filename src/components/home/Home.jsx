@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="hero">
-      <section className="home" id="home">
+      <section className="home" >
         <div className="home-img" id="shrink">
-          <img src="nikku_image.jpg" alt="" />
+          <img src="hero-images.png" alt="" />
         </div>
         <div className="home-text">
           <span>Hi, Myself</span>
@@ -88,6 +88,11 @@ function Home() {
   <div class="itemLeft item1">
     <img src="images/skills/linux.png" alt="" />
   </div>
+  <div class="itemLeft item2"><img src="images/skills/html.png" alt="" /></div>
+  <div class="itemLeft item2"><img src="images/skills/html.png" alt="" /></div>
+  <div class="itemLeft item2"><img src="images/skills/html.png" alt="" /></div>
+  <div class="itemLeft item2"><img src="images/skills/html.png" alt="" /></div>
+  <div class="itemLeft item2"><img src="images/skills/html.png" alt="" /></div>
   <div class="itemLeft item2"><img src="images/skills/html.png" alt="" /></div>
   <div class="itemLeft item3"><img src="images/skills/css.png" alt="" /></div>
   <div class="itemLeft item4"><img src="images/skills/javascript.png" alt="" /></div>

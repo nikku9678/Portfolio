@@ -6,6 +6,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Fira Sans", sans-serif;
+  scroll-behavior: smooth;
 
   
 }

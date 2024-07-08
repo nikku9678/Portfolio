@@ -4,7 +4,7 @@ import "./About.css";
 function About() {
   return (
     <div>
-      <div id="about" className="about" data-aos="fade-up">
+      <div  className="about" data-aos="fade-up">
         <div className="about-box">
           <div className="about-content">
             <div>
@@ -24,14 +24,27 @@ function About() {
               books. Can’t restrain me from capturing the eyeful even though
               lacks photography skills
             </div>
+
+              {/* <h1>My Skills</h1>
+            <div className="skill-container">
+              <div className="skills">
+                
+              </div>
+              <div className="skills">
+
+              </div>
+            </div> */}
           </div>
 
           <div className="about-right">
-            <img src={"nikku.jpg"} alt="" />
+            <img src={"img2.jpg"} alt="" />
+
+      
           </div>
         </div>
       </div>
     </div>
+
   );
 }
 

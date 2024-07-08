@@ -15,7 +15,7 @@ const Project = () => {
     : data.filter(project => project.category === selectedCategory);
 
   return (
-    <div className='project' id='project'>
+    <div className='project'>
       {/* <div className='hr'></div> */}
       <div className='top'>
         <span className='hr-one'></span>

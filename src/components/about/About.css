@@ -1,162 +1,87 @@
 .about {
-  width: 100%;
-  height: 90vh;
-  margin: 80px auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.about h1 {
-  text-align: left;
-  margin: 10px 10px;
-}
-.about .about-box {
-  border-radius: 20px 20px 100px 20px;
-  background-color: white;
   width: 80%;
-  margin-top: -50px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+  margin: 70px auto;
+  padding: 4rem 0 0 0;
 }
 
+.about .about-box {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid green; */
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 2rem 4rem;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.about .about-content h1{
+  text-align: left;
+}
 .about-content {
-  /* border: 2px solid black; */
-  width: 70%;
+  display: flex;
+  padding-top: 2rem;
+  flex-direction: column;
+  /* align-items: center; */
+
+  width: 100%;
 }
 
 .about-info {
-  text-align: left;
+  margin-top: 20px;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.skills {
+  flex: 1;
+  height: 150px;
   padding: 10px;
 }
 
-.about-info {
-  text-align: left;
-  font-size: 15px;
-  line-height: 1.5;
-  letter-spacing: 1.2;
-  margin: 0 0;
-}
-.about-box .about-right {
-  /* border: 2px solid black; */
-  width: 30%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  /* object-fit: cover; */
-  justify-content: center;
-}
-.about-box .about-right img {
-  max-width: 70%;
-  /* margin-top: -70px; */
-  border: 8px solid black;
-  /* border-radius: 30px; */
-}
-.about-right img::before {
-  content: "";
-  background-image: linear-gradient(180deg, red, yellow);
-  animation: rotate 3s linear infinite;
-}
-.about-right img::after {
-  content: "";
-  inset: 8px;
-  background-image: blue;
-  border-radius: inherit;
+.about-right {
+  margin-top: 20px;
 }
 
-@keyframes rotate {
-  100% {
-    rotate: 360deg;
-  }
-}
-.about-left button {
-  border: 1px solid white;
-  background: none;
-  color: white;
-  padding: 5px 30px;
-  width: fit-content;
-  margin: 20px 20px;
-  border-radius: 30px;
-  font-size: 1rem;
+.about-right img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 767px) {
-  .about {
-    width: 100%;
-    /* height: 80vh; */
-    padding: 0 0;
-
-    margin: 40px auto;
-    display: flex;
-    position: relative;
-    /* top: 0; */
-    align-items: center;
-    margin-bottom: 0;
-    background-color: gold;
-  }
-  .about h1 {
-    text-align: left;
-    margin: 50px 10px 0;
+  .about{
+    /* padding: 0; */
   }
   .about .about-box {
-    border-radius: 20px 20px 100px 20px;
-    background-color: white;
-    width: 80%;
-
-    /* margin: 200px auto 0; */
-    display: flex;
-    margin-top: -80px;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    border: 2px solid green;
-    padding: 0 1rem 2rem;
-  }
-
-  .about-content {
-    /* border: 2px solid black; */
+    padding:0;
     width: 100%;
-  }
-
-  .about-info {
-    text-align: left;
-    padding: 10px;
-  }
-
-  .about-info {
-    text-align: left;
-    font-size: 15px;
-    line-height: 1.5;
-    letter-spacing: 1.2;
-    margin: 0 0;
-  }
-  .about-box .about-right {
+    flex-direction: column-reverse;
     /* border: 2px solid black; */
-    width: 80%;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    flex-direction: row;
-    object-fit: cover;
-    justify-content: center;
   }
-  .about-box .about-right img {
-    max-width: 70%;
-    display: none;
-    margin-top: -60px;
 
-    /* border-radius: 30px; */
+  .about .about-content, .about-right {
+    width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+    /* border: 2px solid green; */
   }
-  .about-right img::before {
-    content: "";
-    background-image: linear-gradient(180deg, red, yellow);
-    animation: rotate 3s linear infinite;
-  }
-  .about-right img::after {
-    content: "";
-    inset: 8px;
-    background-image: blue;
-    border-radius: inherit;
+  .about-right img{
+    margin: auto;
+    width: 100%;
+    padding: 0;
+    /* border: 10px solid red; */
   }
 }

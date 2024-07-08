@@ -7,7 +7,7 @@
   padding: 10px 0;
   justify-content: space-around;
   align-items: center;
-  z-index: 1;
+  z-index: 1000;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   /* border-bottom: 2px solid black; */
@@ -26,7 +26,7 @@ nav {
 
 .nav-menu {
   display: flex;
-  gap: 15px;
+  gap: 5px;
   z-index: 9; /* Ensures nav-menu is above other background elements */
 }
 
@@ -37,7 +37,7 @@ nav {
 nav ul li a {
   padding: 10px 25px;
   border-radius: 20px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
   color: black;
@@ -46,8 +46,8 @@ nav ul li a {
 }
 
 nav ul li a.active {
-  color: white;
-  background-color: black;
+  color: slateblue;
+  /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
 }
 
 .menu-bar {
@@ -65,14 +65,15 @@ nav ul li a.active {
   .nav-menu {
     position: absolute;
     right: 0;
-    top: 0;
+    top:75px;
     bottom: 0;
-    background-color: slateblue;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     width: 0px;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
-    height: calc(100vh);
+    gap: 20px;
+    height: calc(40vh);
+    border-radius: 60px 0 0 60px;
     transition: all 0.3s ease-in;
     overflow: hidden;
     align-items: center;
@@ -80,7 +81,7 @@ nav ul li a.active {
   }
 
   .nav-menu.active {
-    width: 100%;
+    width: 50%;
   }
 
   .menu-bar {
@@ -118,7 +119,5 @@ nav ul li a.active {
     color: white;
   }
 
-  nav ul li a.active {
-    color: red;
-  }
+ 
 }
